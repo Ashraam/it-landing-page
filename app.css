@@ -1,0 +1,93 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh; 
+}
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+
+    /*background: #e2ebf0;
+    background-image: -webkit-radial-gradient(top, circle cover, #c2e9fb, #a1c4fd 80%);
+    background-image: -moz-radial-gradient(top, circle cover, #c2e9fb, #a1c4fd 80%);
+    background-image: -o-radial-gradient(top, circle cover, #c2e9fb, #a1c4fd 80%);
+    background-image: radial-gradient(top, circle cover, #c2e9fb, #a1c4fd 80%);*/
+
+    background: linear-gradient(270deg, #80d0c7, #64b1b3, #4992a0, #2e738d, #13547a);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: BgAnim 30s ease infinite;
+    -moz-animation: BgAnim 30s ease infinite;
+    animation: BgAnim 30s ease infinite;
+}
+
+#server {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    font-size: 12px;
+}
+
+div#it {
+    transition: all 0.2s ease;
+    padding: 20px;
+    background: #FFF;
+    border-radius: 8px;
+    text-align: center;
+}
+
+div#it:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 50px 20px rgba(255,255,255,0.25);
+    -moz-box-shadow: 0px 0px 50px 20px rgba(255,255,255,0.25);
+    box-shadow: 0px 0px 50px 20px rgba(255,255,255,0.25);
+}
+
+div#it h1 {
+    text-align: center;
+    font-size: 44px;
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 0;
+    color: #545557;
+    transition: all 0.2s ease;
+}
+
+div#it a {
+    color: inherit;
+    text-decoration: none;
+}
+
+div#it a:hover > h1 {
+    color: #000;
+}
+
+div#it h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 34px;
+    letter-spacing: 3px;
+}
+
+
+@-webkit-keyframes BgAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes BgAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes BgAnim { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
